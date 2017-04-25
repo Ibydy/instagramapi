@@ -1,0 +1,42 @@
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.profile {
+    height: 60px;
+    padding: 5px;
+}
+.image {
+    width: 100%;
+}
+
+.profile-image {
+    border-radius: 100%;
+    width: 50px;
+    float: left;
+}
+
+.profile-text {
+    float: left;
+    padding-left: 10px;
+}
+
+.col {
+    float: left;
+    width: 33.33%;
+    min-width: 300px;
+    margin: 0 20px 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class*='col']:last-of-type {
+    padding-right: 0;
+}
